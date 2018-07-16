@@ -11,7 +11,8 @@ export default class EventsScreen extends Component {
   static get options() {
     return {
       topBar: {
-        visible: false
+        visible: false,
+        animate: false
       }
     }
   }

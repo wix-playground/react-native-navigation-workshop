@@ -13,7 +13,8 @@ export default class LayoutScreen extends Component {
   static get options() {
     return {
       topBar: {
-        visible: false
+        visible: false,
+        animate: false
       }
     }
   }
