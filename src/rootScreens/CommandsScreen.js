@@ -32,20 +32,10 @@ export default class CommandsScreen extends Component {
 
   onClickPush() {
     // TODO: Implement push (use 'rnnworkshop.pushed' component)
-    Navigation.push(this.props.componentId, {
-      component: {
-        name: 'rnnworkshop.pushed'
-      }
-    });
   }
 
   onClickShowModal() {
     // TODO: Implement showModal (use 'rnnworkshop.modal' component)
-    Navigation.showModal({
-      component: {
-        name: 'rnnworkshop.modal'
-      }
-    });
   }
 }
 

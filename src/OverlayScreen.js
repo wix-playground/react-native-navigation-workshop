@@ -15,16 +15,10 @@ export default class OverlayScreen extends Component {
 
   registerComponentDidAppear() {
     // TODO: Listen to static componentDidAppear listener and call addEvent with the event name ('didAppear') and the event object
-    Navigation.events().registerComponentDidAppearListener((event) => {
-      this.addEvent('didAppear', event);
-    });
   }
 
   registerComponentDidDisappear() {
     // TODO: Listen to static componentDidDisappear listener and call addEvent with the event name and the event object
-    Navigation.events().registerComponentDidDisappearListener((event) => {
-      this.addEvent('didDisapper', event);
-    });
   }
 
   addEvent(eventName, event) {

@@ -8,7 +8,6 @@ export default class OptionsScreen extends Component {
     this.onClickShowTopBar = this.onClickShowTopBar.bind(this);
     this.onClickSetTopBarTitle = this.onClickSetTopBarTitle.bind(this);
     this.onClickAddTopBarRightButton = this.onClickAddTopBarRightButton.bind(this);
-    Navigation.events().bindComponent(this);
   }
 
   static get options() {
@@ -34,38 +33,14 @@ export default class OptionsScreen extends Component {
 
   onClickShowTopBar() {
     // TODO: show topBar
-    Navigation.mergeOptions(this.props.componentId, {
-      topBar: {
-        visible: true
-      }
-    });
   }
 
   onClickSetTopBarTitle() {
     // TODO: change topBar title
-    Navigation.mergeOptions(this.props.componentId, {
-      topBar: {
-        title: {
-          text: 'Text'
-        }
-      }
-    });
   }
 
   onClickAddTopBarRightButton() {
     // TODO: add topBar right button and trigger an alert on button pressed
-    Navigation.mergeOptions(this.props.componentId, {
-      topBar: {
-        rightButtons: [{
-          id: 'buttonOne',
-          text: 'Title'
-        }]
-      }
-    });
-  }
-
-  navigationButtonPressed({buttonId}) {
-    alert(`${buttonId} was pressed`)
   }
 }
 
