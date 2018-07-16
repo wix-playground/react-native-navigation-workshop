@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, SafeAreaView, View, Button} from 'react-native';
+import {Navigation} from 'react-native-navigation';
 
 export default class ModalScreen extends Component {
   constructor(props) {
@@ -21,10 +22,16 @@ export default class ModalScreen extends Component {
 
   onClickDismissModal() {
     // TODO: Implement dismissModal
+    Navigation.dismissModal(this.props.componentId);
   }
 
   onClickPush() {
     // TODO: Implement push screen (use 'rnnworkshop.pushed')
+    Navigation.push(this.props.componentId, {
+      component: {
+        name: 'rnnworkshop.pushed'
+      }
+    });
   }
 }
 

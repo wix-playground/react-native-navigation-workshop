@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Image, StyleSheet, Text, SafeAreaView, View, Button} from 'react-native';
+import {Navigation} from 'react-native-navigation';
 
 export default class LayoutScreen extends Component {
   constructor(props) {
@@ -33,14 +34,58 @@ export default class LayoutScreen extends Component {
 
   onClickSetRootWithStack() {
     // TODO: setRoot with stack layout
+    Navigation.setRoot({
+      root: {
+        stack: {
+          children: [{
+            component: {
+              name: 'rnnworkshop.pushed'
+            }
+          }]
+        }
+      }
+    });
   }
 
   onClickSetRootWithBottomTabs() {
     // TODO: setRoot with bottomTabs layout
+    Navigation.setRoot({
+      root: {
+        bottomTabs: {
+          children: [
+            {
+              component: {
+                name: 'rnnworkshop.pushed'
+              }
+            },
+            {
+              component: {
+                name: 'rnnworkshop.pushed'
+              }
+            }]
+        }
+      }
+    });
   }
 
   onClickSetRootWithSideMenu() {
     // TODO: setRoot with sideMenu layout
+    Navigation.setRoot({
+      root: {
+        sideMenu: {
+          left: {
+            component: {
+              name: 'rnnworkshop.pushed'
+            }
+          },
+          center: {
+            component: {
+              name: 'rnnworkshop.pushed'
+            }
+          }
+        }
+      }
+    });
   }
 }
 

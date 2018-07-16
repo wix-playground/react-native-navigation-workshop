@@ -23,10 +23,16 @@ export default class PushedScreen extends Component {
 
   onPop() {
     // TODO: Implement pop screen
+    Navigation.pop(this.props.componentId);
   }
 
   onPush() {
     // TODO: Implement push screen (use the same screen, 'rnnworkshop.pushed')
+    Navigation.push(this.props.componentId, {
+      component: {
+        name: 'rnnworkshop.pushed'
+      }
+    });
   }
 }
 

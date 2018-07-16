@@ -1,7 +1,13 @@
 import React, {Component} from 'react';
-import {Image, StyleSheet, Text, SafeAreaView, View, Button} from 'react-native';
+import {StyleSheet, Text, SafeAreaView, View, Button} from 'react-native';
+import {Navigation} from 'react-native-navigation';
 
 export default class EventsScreen extends Component {
+  constructor(props) {
+    super(props);
+    this.onClickShowOverlay = this.onClickShowOverlay.bind(this);
+  }
+
   static get options() {
     return {
       topBar: {
@@ -15,14 +21,23 @@ export default class EventsScreen extends Component {
       <SafeAreaView style={styles.container}>
         <Text style={styles.header}>Options</Text>
         <View>
-          <Button title='setRoot with stack' onPress={this.onClickPush} />
+          <Button title='showOverlay' onPress={this.onClickShowOverlay} />
         </View>
       </SafeAreaView>
     );
   }
 
-  onClickPush() {
-
+  onClickShowOverlay() {
+    Navigation.showOverlay({
+      component: {
+        name: 'rnnworkshop.overlay',
+        options: {
+          overlay: {
+            interceptTouchOutside: false
+          }
+        }
+      }
+    });
   }
 }
 

@@ -8,6 +8,7 @@ import EventsScreen from './src/rootScreens/EventsScreen';
 
 import ModalScreen from './src/ModalScreen';
 import PushedScreen from './src/PushedScreen';
+import OverlayScreen from './src/OverlayScreen';
 
 Navigation.registerComponent('rnnworkshop.topLevel', () => TopLevelScreen);
 Navigation.registerComponent('rnnworkshop.commands', () => CommandsScreen);
@@ -16,6 +17,7 @@ Navigation.registerComponent('rnnworkshop.events', () => EventsScreen);
 
 Navigation.registerComponent('rnnworkshop.modal', () => ModalScreen);
 Navigation.registerComponent('rnnworkshop.pushed', () => PushedScreen);
+Navigation.registerComponent('rnnworkshop.overlay', () => OverlayScreen);
 
 Navigation.events().registerAppLaunchedListener(() => {
   Navigation.setDefaultOptions({
