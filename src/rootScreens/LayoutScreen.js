@@ -55,12 +55,24 @@ export default class LayoutScreen extends Component {
           children: [
             {
               component: {
-                name: 'rnnworkshop.pushed'
+                name: 'rnnworkshop.pushed',
+                options: {
+                  bottomTab: {
+                    text: 'Layout',
+                    icon: require('../../img/two.png')
+                  }
+                }
               }
             },
             {
               component: {
-                name: 'rnnworkshop.pushed'
+                name: 'rnnworkshop.pushed',
+                options: {
+                  bottomTab: {
+                    text: 'Layout',
+                    icon: require('../../img/two.png')
+                  }
+                }
               }
             }]
         }
