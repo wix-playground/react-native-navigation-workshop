@@ -33,15 +33,15 @@ export default class LayoutScreen extends Component {
   }
 
   onClickSetRootWithStack() {
-    // TODO: setRoot with stack layout
+    // TODO: setRoot with stack layout (use 'rnnworkshop.pushed' component)
   }
 
   onClickSetRootWithBottomTabs() {
-    // TODO: setRoot with bottomTabs layout
+    // TODO: setRoot with bottomTabs layout (use 'rnnworkshop.pushed' component)
   }
 
   onClickSetRootWithSideMenu() {
-    // TODO: setRoot with sideMenu layout
+    // TODO: setRoot with sideMenu layout (use 'rnnworkshop.pushed' component)
   }
 }
 
