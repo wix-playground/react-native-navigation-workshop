@@ -1,9 +1,9 @@
 # react-native-navigation workshop
 
 ## Intro
-The aim of the workshop is to provide you with the basic knowledge and tools required to start working with `react-native-navigation@v2`.
+The aim of the workshop is to provide you the basic knowledge and tools required to start working with `react-native-navigation@v2`.
 
-In this workshop you will build an app which uses V2 to familiarize your self with the RNN's API.
+In this workshop you will build an app which uses V2 to familiarize yourself with the RNN's API.
 The app contains 4 tabs, each focusing on a key element of RNN:
 * Tab 1 - Layouts
   * setRoot with stack
@@ -19,7 +19,7 @@ The app contains 4 tabs, each focusing on a key element of RNN:
   * componentDidAppear
   * componentDidDisappear
 
-In order to focus on working with RNNv2, All views are implemented for you and you only need to add the Navigation api according to the instruction in the code.
+In order to focus on working with RNNv2, All views are implemented for you and you only need to add the Navigation api according to the instructions in the code.
 
 ## Getting Started
 Clone the repo and run the project. Everything has already been setup for you.
@@ -29,6 +29,6 @@ react-native run-ios
 ```
 
 ## Let's get to work
-Look for all the TODO's in the code and implement the missing functionality according to the instruction in code.
+Look for all the TODO's in the code and implement the missing functionality according to the instructions in code.
 
 Use the [documentation](https://wix.github.io/react-native-navigation/v2/#/) for reference
